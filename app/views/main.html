@@ -1,0 +1,37 @@
+<div id="wrapper">
+  <div id="bg"></div>
+  <div id="overlay"></div>
+  <div id="main">
+  </div>
+</div>
+<header id="header">
+  <h1>Nicolas Fetter</h1>
+  <p>Software Engineer &nbsp;&bull;&nbsp; Web Developer &nbsp;&bull;&nbsp; Enterpreneur</p>
+  <nav>
+    <ul>
+      <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+      <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+      <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+    </ul>
+  </nav>
+</header>
+<div id="container" class="container">
+  <ul id="scene" class="scene">
+    <li class="layer" data-depth="1.00"><img src="images/layer1.png"></li>
+    <li class="layer" data-depth="0.80"><img src="images/layer2.png"></li>
+    <li class="layer" data-depth="0.60"><img src="images/layer3.png"></li>
+    <li class="layer" data-depth="0.40"><img src="images/layer4.png"></li>
+    <li class="layer" data-depth="0.20"><img src="images/layer5.png"></li>
+    <li class="layer" data-depth="0.00"><img src="images/layer6.png"></li>
+  </ul>
+  <footer id="footer">
+    <span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+  </footer>
+</div>
+<script src="scripts/parallax.js"></script>
+<script>
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
+</script>
