@@ -44,6 +44,7 @@
 
 		a:hover {
 			border-color: transparent;
+			text-decoration: none;
 		}
 
 /* Icon */
@@ -105,7 +106,7 @@
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 		/* Set your background with this */
-		background: #000 ;
+		background: #0099CC ;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -205,7 +206,7 @@
 		text-align: center;
 		top: -1em;
 		vertical-align: middle;
-		width: 90%;
+		width: 100%;
 		position:absolute;
 		margin-top:10%;
 		z-index: 99;
@@ -342,6 +343,8 @@
 				-webkit-touch-callout: none;
 				border: 0;
 				display: inline-block;
+				text-decoration: none;
+				color: white;
 			}
 
 				#header nav a:before {
@@ -396,7 +399,7 @@
 		bottom: 0;
 		cursor: default;
 		height: 6em;
-		left: 0;
+		left: 15px;
 		line-height: 8em;
 		position: absolute;
 		text-align: center;
@@ -404,12 +407,22 @@
 	}
 
 
-	.fa-twitter:hover:before{
-			background-color: cyan !important;
-			border: solid 2px white !important;
-	}
+.fa-twitter:hover:before{
+	background-color: #4099FF !important;
+	border: solid 2px white !important;
+}
 
-	.fa-facebook:hover:before{
-			background-color: blue !important;
-			border: solid 2px white !important;
-	}
+.fa-facebook:hover:before{
+	background-color: #3b5998 !important;
+	border: solid 2px white !important;
+}
+
+.fa-linkedin-square:hover:before{
+	background-color: #4875B4 !important;
+	border: solid 2px white !important;
+}
+
+.fa-envelope-o:hover:before{
+	background-color: #07a4bb !important;
+	border: solid 2px white !important;
+}
