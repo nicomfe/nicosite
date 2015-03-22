@@ -8,13 +8,16 @@
  *
  * Main module of the application.
  */
-angular
-  .module('nicoSiteApp', [
+
+ var NicoSiteApp = angular
+  .module('NicoSiteApp', [
     'ngAnimate',
     'ngRoute',
     'ngTouch'
-  ])
-  .config(function ($routeProvider) {
+  ]);
+
+
+  NicoSiteApp.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

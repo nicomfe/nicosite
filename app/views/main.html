@@ -12,7 +12,7 @@
       <li><a href="http://facebook.com/nicomfe" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
       <li><a href="https://twitter.com/nicofetter" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
       <li><a href="http://linkedin.com/in/nicofetter" target="_blank" class="icon fa-linkedin-square"><span class="label">Linkedin</span></a></li>
-      <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+      <li><a href="" class="icon fa-envelope-o" data-toggle="modal" data-target="#contactModal"><span class="label">Email</span></a></li>
     </ul>
   </nav>
 </header>
@@ -34,3 +34,26 @@
   var scene = document.getElementById('scene');
   var parallax = new Parallax(scene);
 </script>
+
+<!-- Modal -->
+
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="contactModal modal-dialog-contact">
+    <div class="modal-content-contact">
+      <div class="modal-body-contact">
+        <div class="col-md-10 col-sm-10">
+
+          <div class="row">
+            <h1 class="headerSection" id="myModalLabel">Get in touch</h1>
+             <button type="button" class="floatRight close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          </div>
+
+          <div class="row">
+            <div ng-include src="'views/modals/contact.html'"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
