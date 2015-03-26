@@ -9,27 +9,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css" />
-    <!-- endbower -->
     <!-- endbuild -->
 
     <script src="scripts/skel.min.js"></script>
     <script src="scripts/init.js"></script>
 
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
 
+ <!-- build:css(.tmp) styles/import.css -->
     <noscript>
-      <link rel="stylesheet" href="styles/skel.css" />
-      <link rel="stylesheet" href="styles/style.css" />
-      <link rel="stylesheet" href="styles/style-wide.css" />
-      <link rel="stylesheet" href="styles/style-noscript.css" />
-      <link rel="stylesheet" href="styles/styles-bg.css"/>
+
+        <link rel="stylesheet" href="styles/skel.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/style-wide.css" />
+        <link rel="stylesheet" href="styles/style-noscript.css" />
+        <link rel="stylesheet" href="styles/styles-bg.css"/>
+
     </noscript>
+<!-- endbuild -->
+<!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
   </head>
   <body ng-app="NicoSiteApp">
     <!--[if lt IE 7]>
@@ -49,7 +52,7 @@
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    //  <script>
+      <script>
     //    !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
     //    (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
     //    r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
@@ -59,23 +62,20 @@
     //    ga('send', 'pageview');
     // </script>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
+    <!-- build:js({.tmp,app})  scripts/vendor.js -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
-
     <script src="bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/angular-touch/angular-touch.min.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
     <script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.min.js"></script>
-    <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
+    <!-- build:js({.tmp,app})  scripts/main.js -->
+     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/contact.js"></script>
     <!-- endbuild -->

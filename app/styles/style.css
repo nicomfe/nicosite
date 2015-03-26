@@ -202,12 +202,14 @@
 			font-weight: 900;
 			letter-spacing: -0.035em;
 			line-height: 1em;
+			color: white;
 		}
 
 		#header p {
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.75;
+			color: white;
 		}
 
 		#header nav {
@@ -385,6 +387,7 @@
 		position: absolute;
 		text-align: center;
 		width: 100%;
+		color: white;
 	}
 
 
