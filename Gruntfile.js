@@ -209,10 +209,7 @@ module.exports = function (grunt) {
     filerev: {
       dist: {
         src: [
-          '<%= yeoman.dist %>/scripts/{,*/}*.js',
-          '<%= yeoman.dist %>/styles/main.css',
-          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-          '<%= yeoman.dist %>/styles/fonts/*'
+          '<%= yeoman.dist %>/scripts/{,*/}*.js'
         ]
       }
     },
@@ -238,12 +235,11 @@ module.exports = function (grunt) {
 
     // Performs rewrites based on filerev and the useminPrepare configuration
     usemin: {
-      html: ['<%= yeoman.dist %>/{,*/}*.html'],
+      html: ['<%= yeoman.dist %>/{,*/}*.html', '<%= yeoman.dist %>/views/**/*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
         assetsDirs: [
           '<%= yeoman.dist %>',
-          '<%= yeoman.dist %>/images',
           '<%= yeoman.dist %>/styles'
         ]
       }
@@ -347,21 +343,31 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
+            '*.tmp/styles/**/*',
             'views/{,*/}*.html',
             'scripts/**/*',
             'styles/**/*',
-            'images/{,*/}*.{webp}',
+            'images/{,*/}*.{webp,svg}',
             'styles/fonts/{,*/}*.*'
           ]
         }, {
-          expand: true,
-          cwd: '.tmp/images',
-          dest: '<%= yeoman.dist %>/images',
-          src: ['generated/*']
+            expand: true,
+            cwd: '.tmp/styles',
+            dest: '<%= yeoman.dist %>/styles',
+            src: [
+                '*.css'
+            ]
+        }, {
+            expand: true,
+            cwd: '.tmp/img',
+            dest: '<%= yeoman.dist %>/img',
+            src: [
+                'generated/*'
+            ]
         }, {
           expand: true,
           cwd: '.',
-          src: 'app/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          src: 'app/bower_components/*',
           dest: '<%= yeoman.dist %>'
         }]
       },
@@ -383,8 +389,7 @@ module.exports = function (grunt) {
       ],
       dist: [
         'compass:dist',
-        'imagemin',
-        'svgmin'
+        'imagemin'
       ]
     },
 

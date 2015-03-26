@@ -1,10 +1,7 @@
-/*
-	Aerial by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
+@import "variables";
+@import "compass";
 
 /* Basic */
 
@@ -92,7 +89,7 @@
 	#bg {
 
 		/* Set your background with this */
-		background: #0099CC ;
+		background: $nico-blue ;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -107,11 +104,11 @@
 	}
 
 /* Overlay */
-	@-moz-keyframes overlay { 0% { opacity: 0; } 100% { opacity: 1; } }
-	@-webkit-keyframes overlay { 0% { opacity: 0; } 100% { opacity: 1; } }
-	@-o-keyframes overlay { 0% { opacity: 0; } 100% { opacity: 1; } }
-	@-ms-keyframes overlay { 0% { opacity: 0; } 100% { opacity: 1; } }
-	@keyframes overlay { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-moz-keyframes overlay { 0% { opacity: 0; } 100% { opacity: 0.2; } }
+	@-webkit-keyframes overlay { 0% { opacity: 0; } 100% { opacity: 0.2; } }
+	@-o-keyframes overlay { 0% { opacity: 0; } 100% { opacity: 0.2; } }
+	@-ms-keyframes overlay { 0% { opacity: 0; } 100% { opacity: 0.2; } }
+	@keyframes overlay { 0% { opacity: 0; } 100% { opacity: 0.2; } }
 
 	#overlay {
 		-moz-animation: overlay 1.5s 1.5s forwards;
@@ -373,22 +370,18 @@
 
 /* Footer */
 
-	#footer {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		bottom: 0;
-		cursor: default;
-		height: 6em;
-		left: 15px;
-		line-height: 8em;
-		position: absolute;
-		text-align: center;
-		width: 100%;
-		color: white;
-	}
+#footer {
+	/*@include background-image(linear-gradient(to bottom right, $nico-blue, #003399));*/
+	bottom: 0;
+	cursor: default;
+	height:2em;
+	left: 15px;
+	position: absolute;
+	text-align: center;
+	opacity:0.8;
+	width: 100%;
+	color: white;
+}
 
 
 .fa-twitter:hover:before{
