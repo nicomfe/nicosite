@@ -17,7 +17,7 @@ if (isset($_POST['inputName']) && isset($_POST['inputEmail']) && isset($_POST['i
 
     $mail->From = $_POST['inputEmail'];
     $mail->FromName = $_POST['inputName'];
-    $mail->AddAddress('nicofetter@gmail.com'); //recipient
+    $mail->AddAddress('contact@nicofetter.com'); //recipient
     $mail->Subject = $_POST['inputName'];
     $mail->Body = "Name: " . $_POST['inputName'] . "\r\n\r\nMessage: " . stripslashes($_POST['inputMessage']);
 
@@ -26,12 +26,12 @@ if (isset($_POST['inputName']) && isset($_POST['inputEmail']) && isset($_POST['i
     }
 
     if(!$mail->send()) {
-        $data = array('success' => false, 'message' => 'Message could not be sent. Mailer Error: ' . $mail->ErrorInfo);
+        $data = array('success' => false, 'message' => 'Message could not be sent (You can reach me at contact@nicofetter.com). Error: ' . $mail->ErrorInfo);
         echo json_encode($data);
         exit;
     }
 
-    $data = array('success' => true, 'message' => 'Thanks! We have received your message.');
+    $data = array('success' => true, 'message' => 'Thanks for your message! Ill get back to you shortly.');
     echo json_encode($data);
 
 } else {
