@@ -23,6 +23,22 @@
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/projects', {
+        templateUrl: 'views/projects.html',
+        controller: 'ProjectsCtrl'
+      })
+      .when('/resume', {
+        templateUrl: 'views/resume.html',
+        controller: 'ResumeCtrl'
+      })
+      .when('/about-me', {
+        templateUrl: 'views/about-me.html',
+        controller: 'AboutMeCtrl'
+      })
+      .when('/get-in-touch', {
+        templateUrl: 'views/get-in-touch.html',
+        controller: 'GetInTouchCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
