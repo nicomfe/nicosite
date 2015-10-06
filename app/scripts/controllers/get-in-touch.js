@@ -7,5 +7,5 @@
  * # GetInTouchCtrl
  * Controller of the nicoSiteApp
  */
-angular.module('nicoSiteApp').controller('GetInTouchCtrl', function ($scope) {
+NicoSiteApp.controller('GetInTouchCtrl', function ($scope) {
 });

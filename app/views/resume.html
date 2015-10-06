@@ -1,1 +1,15 @@
-<p>This is the resume view.</p>
+<div class="center-content">
+  <h1>RESUME</h1>
+  <h2>TECHNOLOGIES</h2>
+  <ul class="row">
+
+    <li class="resume-tech {{tech.stars}}" ng-repeat="tech in technologies">
+      {{tech.name}}
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+    </li>
+  </ul>
+</div>

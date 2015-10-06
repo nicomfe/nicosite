@@ -1,0 +1,27 @@
+.resume-tech{
+  &.stars-1{
+    i:nth-child(-n+1){
+      color:$nico-yellow;
+    }
+  }
+  &.stars-2{
+    i:nth-child(-n+2){
+      color:$nico-yellow;
+    }
+  }
+  &.stars-3{
+    i:nth-child(-n+3){
+      color:$nico-yellow;
+    }
+  }
+  &.stars-4{
+    i:nth-child(-n+4){
+      color:$nico-yellow;
+    }
+  }
+  &.stars-5{
+    i:nth-child(-n+5){
+      color:$nico-yellow;
+    }
+  }
+}

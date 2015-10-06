@@ -7,6 +7,6 @@
  * # ResumeCtrl
  * Controller of the nicoSiteApp
  */
-angular.module('nicoSiteApp').controller('ResumeCtrl', function ($scope) {
-
+NicoSiteApp.controller('ResumeCtrl', function ($scope,ResumeFactory) {
+  $scope.technologies = ResumeFactory.getTechnologies();
 });

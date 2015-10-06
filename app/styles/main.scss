@@ -2,11 +2,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
 @import "bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss";
+@import "fontawesome/scss/font-awesome.scss";
 // endbower
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:700);
 
 @import "variables";
+@import "resume";
+@import "svg-header";
 
 html,body{
   font-family: 'Oswald', sans-serif;
@@ -81,6 +84,7 @@ html,body{
     height:100%;
     &>div{
       height:100%;
+      width:100%;
       display:table;
     }
     .center-content{
