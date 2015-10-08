@@ -1,15 +1,48 @@
-<div class="center-content">
+<div class="center-content resume">
   <h1>RESUME</h1>
-  <h2>TECHNOLOGIES</h2>
-  <ul class="row">
+  <div class="row">
+    <div class="col-sm-5">
+      <h2>Technologies</h2>
+      <ul>
+        <li class="resume-tech {{tech.stars}}" ng-repeat="tech in technologies">
+          <div class="row">
+            <div class="col-xs-3 col-sm-12 col-lg-3">
+              <h4>{{tech.name}}</h4>
+            </div>
+            <div class="col-xs-6 col-sm-12 col-lg-9">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-7">
+      <h2>Work Experience</h2>
+      <ul>
+        <li class="experience-item" ng-repeat="experience in workExperience">
+          <div class="experience-header">
+            <img ng-src="{{experience.img}}">
+            <div><h3>{{experience.company}}</h3></div>
+            <div><h4>{{experience.period}}</h4></div>
+          </div>
+          <p>
+            {{experience.description}}
+          </p>
+          <div>
+            <div class="col-xs-6">
+              <i class="fa fa-map-marker"></i> {{experience.city}}
+            </div>
+            <div class="col-xs-6">
+              <a href="{{experience.website}}" target="_blank"><i class="fa fa-link"></i> Website</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-    <li class="resume-tech {{tech.stars}}" ng-repeat="tech in technologies">
-      {{tech.name}}
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-    </li>
-  </ul>
 </div>
