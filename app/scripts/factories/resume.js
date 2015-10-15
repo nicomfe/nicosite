@@ -109,6 +109,15 @@ NicoSiteApp.factory('ResumeFactory',function(){
             website: 'http://www.frc.utn.edu.ar/'
           },
         ]
+      },
+      getCertifications: function(){
+        return[
+          {
+            img:'../images/resume/java.png',
+            title:'Java SE 6 Programmer',
+            date:'January 2012'
+          }
+        ]
       }
     };
 });

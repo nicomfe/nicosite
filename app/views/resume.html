@@ -42,6 +42,16 @@
           </div>
         </li>
       </ul>
+      <h2>Certifications</h2>
+      <ul>
+        <li ng-repeat="certification in certifications">
+          <div class="experience-header">
+            <img ng-src="{{certification.img}}">
+            <div><h3>{{certification.title}}</h3></div>
+            <div><h4>{{certification.date}}</h4></div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 
