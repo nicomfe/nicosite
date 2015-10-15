@@ -44,7 +44,7 @@ a:hover{
      flex-direction: column;
       div{
         height:100%;
-        flex: 2;
+/*        flex: 2;*/
         display: list-item;
         &:first-child{
           display:block;
@@ -83,6 +83,8 @@ a:hover{
     }
   }
   .home-right{
+    padding-left:0;
+    padding-right:0;
     height:100%;
     overflow: auto;
     position:relative;
