@@ -77,7 +77,7 @@ NicoSiteApp.factory('ResumeFactory',function(){
       getWorkExperience: function(){
         return[
           {
-            img:'../images/resume/spark.png',
+            img:'../images/resume/spark.svg',
             company:'Spark Ventures',
             city: 'Auckland, New Zealand',
             period:'March 2014 - present',
@@ -85,7 +85,7 @@ NicoSiteApp.factory('ResumeFactory',function(){
             website: 'http://www.sparkventures.co.nz/'
           },
           {
-            img:'../images/resume/mako.png',
+            img:'../images/resume/mako.svg',
             company:'Mako Networks',
             city: 'Auckland, New Zealand',
             period:'July 2013 - Februrary 2014',
@@ -93,7 +93,7 @@ NicoSiteApp.factory('ResumeFactory',function(){
             website: 'https://www.makonetworks.com/'
           },
           {
-            img:'../images/resume/moto.png',
+            img:'../images/resume/moto.svg',
             company:'Motorola Mobility',
             city: 'Cordoba, Argentina',
             period:'April 2011 - March 2013',
@@ -101,7 +101,7 @@ NicoSiteApp.factory('ResumeFactory',function(){
             website: 'http://www.arrisi.com/'
           },
           {
-            img:'../images/resume/utn.png',
+            img:'../images/resume/utn.svg',
             company:'UTN - CIDS',
             city: 'Cordoba, Argentina',
             period:'February 2011 - March 2011',
@@ -113,7 +113,7 @@ NicoSiteApp.factory('ResumeFactory',function(){
       getCertifications: function(){
         return[
           {
-            img:'../images/resume/java.png',
+            img:'../images/resume/java.svg',
             title:'Java SE 6 Programmer',
             date:'January 2012'
           }
@@ -122,7 +122,7 @@ NicoSiteApp.factory('ResumeFactory',function(){
       getEducations: function(){
         return[
           {
-            img:'../images/resume/utn.png',
+            img:'../images/resume/utn.svg',
             title:'Software Engineer',
             entity:'Universidad Tecnologica Nacional',
             date:'March 2005 - December 2010',
