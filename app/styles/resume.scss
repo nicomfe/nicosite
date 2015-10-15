@@ -3,8 +3,12 @@
 .resume{
   ul{
     list-style:none;
+    padding-left:15px;
+    padding-right:15px;
     li{
       width: 100%;
+      background-color:black;
+      padding:15px;
     }
   }
   @media (min-width: $screen-sm-min) and (max-width: $screen-md-max){
@@ -13,6 +17,14 @@
     }
     .resume-tech{
       text-align: center;
+    }
+  }
+  @media (max-width: $screen-md-max){
+    ul{
+      padding-left:0;
+      padding-right:0;
+      margin-right: 15px;
+      margin-left: 15px;
     }
   }
   .resume-tech{
