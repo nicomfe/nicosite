@@ -44,11 +44,29 @@
       </ul>
       <h2>Certifications</h2>
       <ul>
-        <li ng-repeat="certification in certifications">
+        <li class="experience-item" ng-repeat="certification in certifications">
           <div class="experience-header">
             <img ng-src="{{certification.img}}">
             <div><h3>{{certification.title}}</h3></div>
             <div><h4>{{certification.date}}</h4></div>
+          </div>
+        </li>
+      </ul>
+      <h2>Education</h2>
+      <ul>
+        <li class="experience-item" ng-repeat="education in educations">
+          <div class="experience-header">
+            <img ng-src="{{education.img}}">
+            <div><h3>{{education.title}}</h3></div>
+            <div><h4>{{education.date}}</h4></div>
+          </div>
+          <div>
+            <div class="col-xs-6">
+              <i class="fa fa-map-marker"></i> {{education.city}}
+            </div>
+            <div class="col-xs-6">
+              <a href="{{education.website}}" target="_blank"><i class="fa fa-link"></i> Website</a>
+            </div>
           </div>
         </li>
       </ul>

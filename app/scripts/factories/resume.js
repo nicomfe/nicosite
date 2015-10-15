@@ -72,7 +72,7 @@ NicoSiteApp.factory('ResumeFactory',function(){
             name: '.NET',
             stars: 'stars-3'
           }
-        ]
+        ];
       },
       getWorkExperience: function(){
         return[
@@ -108,7 +108,7 @@ NicoSiteApp.factory('ResumeFactory',function(){
             description:'Development of a web site for the Education department of the Argentina government.',
             website: 'http://www.frc.utn.edu.ar/'
           },
-        ]
+        ];
       },
       getCertifications: function(){
         return[
@@ -117,7 +117,19 @@ NicoSiteApp.factory('ResumeFactory',function(){
             title:'Java SE 6 Programmer',
             date:'January 2012'
           }
-        ]
+        ];
+      },
+      getEducations: function(){
+        return[
+          {
+            img:'../images/resume/utn.png',
+            title:'Software Engineer',
+            entity:'Universidad Tecnologica Nacional',
+            date:'March 2005 - December 2010',
+            city: 'Cordoba, Argentina',
+            website: 'http://www.frc.utn.edu.ar/'
+          }
+        ];
       }
     };
 });

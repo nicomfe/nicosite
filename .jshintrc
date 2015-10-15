@@ -25,6 +25,7 @@
     "moment": false,
     "ga": false,
     "_gaq": false,
-    "jQuery":false
+    "jQuery":false,
+    "NicoSiteApp":true
   }
 }
