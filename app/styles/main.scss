@@ -44,7 +44,6 @@ a:hover{
      flex-direction: column;
       div{
         height:100%;
-/*        flex: 2;*/
         display: list-item;
         &:first-child{
           display:block;
@@ -103,7 +102,7 @@ a:hover{
     .center-content{
       -webkit-animation: rotateCard 1s linear 1 forwards 1s;
       color:white;
-      background-color:$nico-black;
+      background:$nico-transparent-background-light;
       position: relative;
       display: table-cell;
       vertical-align:middle;
@@ -136,12 +135,10 @@ h2{
 
 @-webkit-keyframes rotateCard {
   from {
-  //-webkit-transform: rotateY(0deg);
     opacity: 0;
   }
 
   to {
-    opacity:0.7;
-  //-webkit-transform: rotateY(360deg);
+    opacity:1;
   }
 }

@@ -19,6 +19,16 @@
           </div>
         </li>
       </ul>
+      <h2>Certifications</h2>
+      <ul>
+        <li class="experience-item" ng-repeat="certification in certifications">
+          <div class="experience-header">
+            <img ng-src="{{certification.img}}">
+            <div><h3>{{certification.title}}</h3></div>
+            <div><h4>{{certification.date}}</h4></div>
+          </div>
+        </li>
+      </ul>
     </div>
     <div class="col-sm-7">
       <h2>Work Experience</h2>
@@ -42,16 +52,6 @@
           </div>
         </li>
       </ul>
-      <h2>Certifications</h2>
-      <ul>
-        <li class="experience-item" ng-repeat="certification in certifications">
-          <div class="experience-header">
-            <img ng-src="{{certification.img}}">
-            <div><h3>{{certification.title}}</h3></div>
-            <div><h4>{{certification.date}}</h4></div>
-          </div>
-        </li>
-      </ul>
       <h2>Education</h2>
       <ul>
         <li class="experience-item" ng-repeat="education in educations">
@@ -72,5 +72,4 @@
       </ul>
     </div>
   </div>
-
 </div>

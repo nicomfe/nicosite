@@ -3,11 +3,12 @@
 .resume{
   ul{
     list-style:none;
+    margin-left:15px;
     padding-left:15px;
     padding-right:15px;
     li{
       width: 100%;
-      background-color:black;
+      background:$nico-transparent-background-dark;
       padding:15px;
     }
   }
