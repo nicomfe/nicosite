@@ -86,6 +86,12 @@ a:hover{
     padding-right:0;
     height:100%;
     overflow: auto;
+    @media (max-width: $screen-xs-max){
+      overflow:initial;
+      background-color:black;
+      height:auto;
+      background-size: contain;
+    }
     position:relative;
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9) ), url('http://kellianderson.com/blog/wp-content/uploads/2013/12/sitting-desk.jpg') no-repeat;
     background-size:cover;
@@ -115,6 +121,30 @@ a:hover{
       opacity:0;
       ul,li,p,a,h1,h2,h3{
         opacity:1;
+      }
+      ul{
+        list-style:none;
+        margin-left:15px;
+        padding-left:15px;
+        padding-right:15px;
+        li{
+          width: 100%;
+          background:$nico-transparent-background-dark;
+          padding:15px;
+        }
+      }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-max){
+        ul{
+          padding-left:0;
+        }
+      }
+      @media (max-width: $screen-md-max){
+        ul{
+          padding-left:0;
+          padding-right:0;
+          margin-right: 15px;
+          margin-left: 15px;
+        }
       }
     }
   }
