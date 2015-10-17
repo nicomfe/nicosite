@@ -1,14 +1,18 @@
 @import "variables";
 
 .resume{
+  ul{
+    margin-top:10px;
+    margin-bottom:10px;
+  }
   @media (min-width: $screen-sm-min) and (max-width: $screen-md-max){
     .resume-tech{
       text-align: center;
     }
   }
   .resume-tech{
-    padding-top:5px;
-    padding-bottom:5px;
+    padding-top:3px !important;
+    padding-bottom:3px !important;
     i{
       margin-top:10px;
       margin-bottom:10px;
