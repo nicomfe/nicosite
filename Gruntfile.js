@@ -6,6 +6,7 @@
 // 'test/spec/{,*/}*.js'
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
+var proxySnippet = require('grunt-connect-proxy/lib/utils').proxyRequest;
 
 module.exports = function (grunt) {
 
@@ -71,23 +72,36 @@ module.exports = function (grunt) {
         hostname: 'localhost',
         livereload: 35729
       },
+      proxies: [
+        {
+            context: '/sendEmail',
+            host: 'localhost',
+            port: 3002,
+            changeOrigin: true
+        },
+        {
+            context: '/test',
+            host: 'localhost',
+            port: 3002,
+            changeOrigin: true
+        }
+      ],
       livereload: {
         options: {
+          middleware: function(connect, options) {
+            var middlewares = [];
+            options.base.forEach(function(base) {
+                // Serve static files.
+                middlewares.push(connect.static(base));
+            });
+            middlewares.push(proxySnippet);
+            return middlewares;
+          },
           open: true,
-          middleware: function (connect) {
-            return [
-              connect.static('.tmp'),
-              connect().use(
-                '/app/bower_components',
-                connect.static('./app/bower_components')
-              ),
-              connect().use(
-                '/app/styles',
-                connect.static('./app/styles')
-              ),
-              connect.static(appConfig.app)
-            ];
-          }
+          base: [
+            '.tmp',
+            '<%= yeoman.app %>'
+          ]
         }
       },
       test: {
@@ -108,6 +122,16 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
+          middleware: function(connect, options) {
+            return [
+              // Include the proxy first
+              proxySnippet,
+              // Serve static files.
+              connect.static(options.base),
+              // Make empty directories browsable.
+              connect.directory(options.base)
+            ];
+          },
           open: true,
           base: '<%= yeoman.dist %>'
         }
@@ -411,6 +435,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'concurrent:server',
+      'configureProxies',
       'autoprefixer:server',
       'connect:livereload',
       'watch'
