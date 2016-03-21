@@ -29,6 +29,13 @@ a:hover{
   color:darken(white,15%);
 }
 
+.btn{
+  font-family: 'Oswald', sans-serif;
+  border-radius:2px;
+  background-color:white;
+  color:$nico-black;
+}
+
 .content{
   height: 100%;
   top: 0;
@@ -48,8 +55,10 @@ a:hover{
         height:100%;
         display: list-item;
         &:hover{
+          box-shadow: -1px 10px 10px -2px rgba(0, 0, 0, 0.2) ;
+          -webkit-box-shadow: -1px 10px 10px -2px rgba(0, 0, 0, 0.2) ;
           transform: perspective(300px) rotateX(-10deg);
-          transition: transform 0.2s linear;
+          transition: transform 0.2s linear, box-shadow 0.2s linear;
         }
         &:first-child{
           display:block;
@@ -153,6 +162,11 @@ a:hover{
         }
       }
     }
+  }
+}
+h1 {
+  a {
+    color: $nico-black !important;
   }
 }
 h1,h2,h3{
