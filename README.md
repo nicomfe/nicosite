@@ -2,10 +2,9 @@
 
 `yarn start`
 
-## Build and deploy
+## Deploy
 
-`yarn build`
-copy public folder content via ftp to nicofetter.com/public_html
+pushing to master branch should trigger circleci job which will update the site via ftp.
 
 ## Icons
 https://simpleicons.org/

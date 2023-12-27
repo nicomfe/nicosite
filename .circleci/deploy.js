@@ -20,4 +20,3 @@ ftpDeploy.deploy(config, (err) => {
     console.log('finished')
   }
 })
-
