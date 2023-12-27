@@ -1,12 +1,15 @@
-# nico-site
+## Start Development: 
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+`yarn start`
 
-## Build & development
+## Build and deploy
 
-Run `grunt` for building and `grunt serve` for preview.
+`yarn build`
+copy public folder content via ftp to nicofetter.com/public_html
 
-## Testing
+## Icons
+https://simpleicons.org/
 
-Running `grunt test` will run the unit tests with karma.
+## Colors
+
+https://flatuicolors.com/palette/es

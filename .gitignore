@@ -1,8 +1,5 @@
-node_modules/
-bower_components/
-*.log
-.sass-cache
+public/
+node_modules
+.cache
+.env
 .DS_Store
-.tmp/
-build/
-dist/

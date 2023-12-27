@@ -1,0 +1,23 @@
+@import '../theme/base.scss';
+
+.main {
+  background: $primary-color;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  h1 {
+    margin-bottom: 1rem;
+  }
+  h1, p, a {
+    color: $primary-accent-color;
+  }
+  p {
+    opacity: 0.8;
+  }
+}
