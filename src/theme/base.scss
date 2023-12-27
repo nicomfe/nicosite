@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+$primary-color: #222f3e;
+$primary-accent-color: #d1ccc0;
+$secondary-color: #ffb142;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+}
